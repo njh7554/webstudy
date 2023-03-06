@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*  익명 함수의 콜백!@!@!@@!!@!!@!!!!!! */
+        function func1(data1, data2, func){
+            func(data1,data2);
+        }
+        func1('아니', '맞아', function(data1, data2){
+            console.log(data1, data2);
+        });
+    </script>
+
+    <script>
+        function func2(data1, data2, info){
+            info(data1, data2);
+        }
+        func2('집에', '가자', function(data1, data2) {
+            console.log(data1, data2);
+        });
+        
+     
+    </script>
+    <script>
+        function func3(data1, data2, func){
+            func(data1, data2);
+        }
+        func3('작업', '영역', function(data1, data2) {
+            console.log(data1, data2);
+        });
+    </script>
+    <script>
+        function func4(data1, data2, func){
+            func(data1,data2);
+        }
+        func4('안녕', '하세요', function(data1, data2){
+            console.log(data1, data2);
+        });
+    </script>
+</body>
+</html>

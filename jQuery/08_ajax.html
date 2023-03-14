@@ -143,7 +143,6 @@
             sync: true,
             dataType: 'xml',
             success: function(data){
-                
                 $.each($(data).find('item'), (i, bookList)=>{
                     var table = $('<table border="1px"><thead><tbody><tr>')
                     table.append($('<td>').text($(bookList).find('title').text()) );
